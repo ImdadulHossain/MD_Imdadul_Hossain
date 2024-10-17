@@ -56,6 +56,28 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Blog Section Start -->
+    <div class="container">
+        <h1>Blog Posts</h1>
+        {% if posts %}
+            <ul>
+                {% for post in posts %}
+                    <li>
+                        <h2>{{ post.title }}</h2>
+                        <p>by {{ post.author }} | {{ post.created_at|date:"F j, Y" }}</p>
+                        <p>{{ post.content|slice:300 }}...</p>
+                        <a href="#">Read More</a>  <!-- Link to individual post page -->
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No posts available.</p>
+        {% endif %}
+    </div>
+
+    <!-- Blog Section End -->
+
+    <h1>HOw are you doing</h1>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
