@@ -79,16 +79,7 @@ WSGI_APPLICATION = 'Winterblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-# settings.py
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg',
         'NAME': 'md_imdadul',
         'USER': 'postgres',
         'PASSWORD': '123321',
