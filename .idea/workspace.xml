@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d8a1ffa-ba03-4a9e-aad2-8c8d9628413b" name="Changes" comment="First commit and push">
+    <list default="true" id="8d8a1ffa-ba03-4a9e-aad2-8c8d9628413b" name="Changes" comment="3rd commit and push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/Winterblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/Winterblog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/Winterblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/Winterblog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/templates/blogmaster/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/templates/blogmaster/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winterblog/blogmaster/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogmaster/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/blogsection/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogsection/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/blogsection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogsection/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/blogsection/templates/blogsection/bloggerpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogsection/templates/blogsection/bloggerpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/blogsection/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogsection/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winterblog/blogsection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winterblog/blogsection/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,16 +62,23 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.django-configuration.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.urls.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Projects/My_python_projects/project_pycharm/NewBloger/Winterblog/blogsection/views.py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -76,8 +91,55 @@
       <recent name="E:\Projects\My_python_projects\project_pycharm\NewBloger\Winterblog\blogmaster" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.django-configuration">
+    <configuration name="django-configuration" type="PythonConfigurationType" factoryName="Python">
+      <module name="NewBloger" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (NewBloger)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Winterblog/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NewBloger" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Winterblog/blogsection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Winterblog/blogsection/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NewBloger" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,7 +153,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Winterblog/blogsection/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,6 +162,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.django-configuration" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Python.urls" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.urls" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -131,6 +203,46 @@
       <workItem from="1729178900798" duration="76000" />
       <workItem from="1729179031439" duration="13000" />
       <workItem from="1729179066263" duration="1472000" />
+      <workItem from="1729245967370" duration="532000" />
+      <workItem from="1729246529136" duration="5757000" />
+      <workItem from="1729263030201" duration="2494000" />
+      <workItem from="1729331875660" duration="6524000" />
+      <workItem from="1729448302116" duration="30000" />
+      <workItem from="1729526997768" duration="4906000" />
+      <workItem from="1729774133649" duration="4693000" />
+      <workItem from="1729866560962" duration="2674000" />
+      <workItem from="1729924369489" duration="89000" />
+      <workItem from="1729944625312" duration="892000" />
+      <workItem from="1729945564363" duration="10000" />
+      <workItem from="1729945586935" duration="10079000" />
+      <workItem from="1730015332236" duration="14168000" />
+      <workItem from="1730122765544" duration="1551000" />
+      <workItem from="1730139761402" duration="603000" />
+      <workItem from="1730210093531" duration="1478000" />
+      <workItem from="1730466338379" duration="1814000" />
+      <workItem from="1730614793595" duration="257000" />
+      <workItem from="1730615082497" duration="7000" />
+      <workItem from="1730615189627" duration="7746000" />
+      <workItem from="1730734261709" duration="2000" />
+      <workItem from="1730734323828" duration="4000" />
+      <workItem from="1730817705374" duration="8387000" />
+      <workItem from="1730896132391" duration="3057000" />
+      <workItem from="1730991607944" duration="4002000" />
+      <workItem from="1731039186633" duration="924000" />
+      <workItem from="1731416771381" duration="2109000" />
+      <workItem from="1731577625540" duration="14000" />
+      <workItem from="1731754343737" duration="125000" />
+      <workItem from="1731754606402" duration="3372000" />
+      <workItem from="1731925487394" duration="2000" />
+      <workItem from="1731931647617" duration="631000" />
+      <workItem from="1732111097174" duration="3137000" />
+      <workItem from="1732120549494" duration="10000" />
+      <workItem from="1732883878447" duration="520000" />
+      <workItem from="1732889384938" duration="44000" />
+      <workItem from="1732942225039" duration="1626000" />
+      <workItem from="1732943875373" duration="3043000" />
+      <workItem from="1734157128004" duration="257000" />
+      <workItem from="1734241969709" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="First commit and push">
       <option name="closed" value="true" />
@@ -140,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729152091927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3rd commit and push">
+      <option name="closed" value="true" />
+      <created>1729187930701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729187930701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,17 +279,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit and push" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit and push" />
+    <MESSAGE value="2nd commit and push" />
+    <MESSAGE value="3rd commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd commit and push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NewBloger$models.coverage" NAME="models Coverage Results" MODIFIED="1729944882025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Winterblog/blogsection" />
+    <SUITE FILE_PATH="coverage/NewBloger$urls.coverage" NAME="urls Coverage Results" MODIFIED="1730652559817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Winterblog/blogsection" />
+    <SUITE FILE_PATH="coverage/NewBloger$django_configuration.coverage" NAME="django-configuration Coverage Results" MODIFIED="1730652617601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/NewBloger$views.coverage" NAME="views Coverage Results" MODIFIED="1730651693100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Winterblog/blogsection" />
+    <SUITE FILE_PATH="coverage/NewBloger$main.coverage" NAME="views Coverage Results" MODIFIED="1730652467710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

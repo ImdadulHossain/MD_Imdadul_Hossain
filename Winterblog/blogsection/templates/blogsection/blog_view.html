@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'blogsection/blog_base.html' %}
+<head>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    {% block body %}
+    <a href="{% url 'blogsection:blog' %}">hlw</a>
+
+    <!-- Single Post Start -->
+
+    <div class="container text-center py-5">
+         <h2>{{ post.title }}</h2>
+         <p>by {{ post.author }} | {{ post.created_at|date:"F j, Y" }}</p>
+         <p>{{ post.content|safe }}...</p>
+    </div>
+
+    {% endblock %}
+
+    <!-- Single Post End -->
+
+</body>
+</html>

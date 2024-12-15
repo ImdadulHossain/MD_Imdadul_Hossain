@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +29,7 @@ SECRET_KEY = 'django-insecure-xtc)u6lujn&hq1xypmr+j$pyqxt8^pe_x=k_-yuc0uf91u6vru
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +44,9 @@ INSTALLED_APPS = [
     'blogmaster',
     'blogsection',
 ]
+
+INSTALLED_APPS += ('django_summernote', )
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,12 +84,11 @@ WSGI_APPLICATION = 'Winterblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'md_imdadul',
         'USER': 'postgres',
         'PASSWORD': '123321',
         'HOST': 'localhost',
-        'PORT': '5432',
     }
 }
 
@@ -123,7 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'blogmaster/static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'blogmaster/static')]
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

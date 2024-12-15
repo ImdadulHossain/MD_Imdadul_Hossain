@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MD IMDADUL HOSSAIN</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="MD IMDADUL HOSSAIN" name="keywords">
+    <meta content="MD IMDADUL HOSSAIN" name="description">
 
     <!-- Favicon -->
     <link href="{% static 'images/my.ico' %}" rel="icon">
@@ -33,8 +33,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
+        <a href="home.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">MD IMDADUL </span>HOSSAIN</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
                 <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="http://127.0.0.1:8000/blog" class="nav-item nav-link">Blog</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
             <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
@@ -67,7 +67,7 @@
                     </button>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ESiN_MZf5ro" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">IMDADUL HOSSAIN</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">IMDADUL</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white">HOSSAIN</h1>
                     <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="" class="btn btn-outline-light mr-5">Download CV</a>
@@ -105,7 +105,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <div id="about" class="container-fluid py-5">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
@@ -122,13 +122,14 @@
                         django framework, I will make a fast and comfortable to use back-end system.
                     </p>
                     <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Md Imdadul Hossain</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">30 June 1997</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Honours</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+8801629401625</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">titilhossain@gmail.com</span></h6></div>
-
+                        {% for my_info in my_info %}
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">{{ my_info.name }}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">{{ my_info.birthday }}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">{{ my_info.Degree }}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">{{ my_info.experience }}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">{{ my_info.phone }}</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">{{ my_info.email }}</span></h6></div>
+                        {% endfor %}
                     </div>
                     <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
                     <a href="" class="btn btn-outline-primary">Learn More</a>
@@ -150,53 +151,27 @@
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        {% for my_education in my_education %}
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Honours In Economics</h5>
-                            <p class="mb-2"><strong>National University</strong> | <small>2018 - 2024</small></p>
+                            <h5 class="font-weight-bold mb-1">{{ my_education.name }}</h5>
+                            <p class="mb-2"><strong>{{ my_education.institute }}</strong> | <small>{{ my_education.year }}</small></p>
                             <p></p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Higher School Certificate</h5>
-                            <p class="mb-2"><strong>Govn Bangla College</strong> | <small>2015 - 2017</small></p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Secondary School Certificate</h5>
-                            <p class="mb-2"><strong>Kakoli High School</strong> | <small>2012 - 2014</small></p>
-                            <p></p>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Expericence</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        {% for my_experience in my_experience %}
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2020 - 2021</small></p>
-                            <p>learned how to use boostrap and creative design</p>
+                            <h5 class="font-weight-bold mb-1">{{ my_experience.name }}</h5>
+                            <p class="mb-2"><strong>{{ my_experience.company }}</strong> | <small>{{ my_experience.year }}</small></p>
+                            <p>{{ my_experience.desc }}</p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Front-End Developer</h5>
-                            <p class="mb-2"><strong>Freelancing</strong> | <small>2022 - 2023</small></p>
-                            <p>Created Front-end app with react.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Back-End Developer</h5>
-                            <p class="mb-2"><strong>Freelancing</strong> | <small>2023 - 2024</small></p>
-                            <p>Created Back-end app with python django framework.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">DATABASE Management</h5>
-                            <p class="mb-2"><strong>Freelancing</strong> | <small>2023 - 2024</small></p>
-                            <p>Created Database for app with PostgreSQL.</p>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -285,54 +260,16 @@
                 <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                {% for my_service in my_service %}
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="{{ my_service.icon_type }} fa-2x {{ my_service.icon }} service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">{{ my_service.name }}</h4>
+                        </div>
+                        <p>{{ my_service.desc }}</p>
+                        <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                     </div>
-                    <p>I will provide you with good design and high quality web template.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Development</h4>
-                    </div>
-                    <p>Innovative to develop your app to make it for flexible.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Design</h4>
-                    </div>
-                    <p>I will make you a highly advance web app with react.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Development</h4>
-                    </div>
-                    <p>I will develop your app with python django frame work</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SEO</h4>
-                    </div>
-                    <p>I will add keyword and description for better SEO.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Content Creating</h4>
-                    </div>
-                    <p>I will make you post for your website.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -470,39 +407,19 @@
                 <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
             </div>
             <div class="row">
+                {% for post in posts %}
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="{{ post.image }}" alt="">
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1">01</h4>
                             <small class="text-white text-uppercase">Jan</small>
                         </div>
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <h5 class="font-weight-medium mb-4">{{ post.title }}</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

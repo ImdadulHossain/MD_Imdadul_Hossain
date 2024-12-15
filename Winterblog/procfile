@@ -1,0 +1,1 @@
+web gunicorn Winterblog.wsgi:apllication --log-file -
